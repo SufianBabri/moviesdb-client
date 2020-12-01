@@ -15,7 +15,7 @@ export async function getMovie(id) {
 }
 
 export async function saveMovie(movie) {
-  if (movie._id) {
+  if (movie._id !== "new") {
     const body = { ...movie };
     delete body._id;
     return await http.put(movieUrl(movie._id), body);
