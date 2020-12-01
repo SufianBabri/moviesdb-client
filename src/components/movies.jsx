@@ -70,8 +70,8 @@ class Movies extends Component {
 		if (count === 0) return <p>There are no movies in the database</p>;
 		else if (count === undefined)
 			return (
-				<div class="row align-items-center justify-content-center">
-					<div class="spinner-border"></div>
+				<div className="row align-items-center justify-content-center">
+					<div className="spinner-border"></div>
 				</div>
 			);
 
