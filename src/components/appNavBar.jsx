@@ -10,7 +10,7 @@ const AppNavBar = ({ user }) => {
 					className="nav-link"
 					to="/"
 					style={{ textDecoration: 'none', color: `white` }}>
-					<i className="fa fa-film">&nbsp;&nbsp;Vidly</i>
+					<i className="fa fa-film">&nbsp;&nbsp;Movies DB</i>
 				</NavLink>
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
