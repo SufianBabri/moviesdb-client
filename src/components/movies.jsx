@@ -25,8 +25,9 @@ class Movies extends Component {
 		const { data } = await getGenres();
 		const { data: movies } = await getMovies();
 
-		const genres = [{ _id: '', name: 'All Genres' }, ...data];
-		this.setState({ movies, genres });
+		const allGenreOption = { _id: '', name: 'All Genres' };
+		const genres = [allGenreOption, ...data];
+		this.setState({ movies, genres, selectedGenre: allGenreOption });
 	}
 
 	getPagedData = () => {
