@@ -91,7 +91,7 @@ class Movies extends Component {
 					<div className="col-md">
 						{user && (
 							<Link
-								to={'/new'}
+								to={'/movies/new'}
 								className="btn btn-primary"
 								style={{ marginBottom: 20 }}>
 								New Movies
