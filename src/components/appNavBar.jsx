@@ -19,12 +19,6 @@ const AppNavBar = ({ user }) => {
 					<NavLink className="nav-item nav-link" to="/movies">
 						Movies <span className="sr-only">(current)</span>
 					</NavLink>
-					<NavLink className="nav-item nav-link" to="/customers">
-						Customers
-					</NavLink>
-					<NavLink className="nav-item nav-link" to="/rentals">
-						Rentals
-					</NavLink>
 					{!user && (
 						<React.Fragment>
 							<NavLink className="nav-item nav-link" to="/login">
